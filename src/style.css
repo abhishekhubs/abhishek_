@@ -89,10 +89,10 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-image: url("/gta_logo_purple.webp");
+  background-image: url("/second_logo.webp");
   background-repeat: no-repeat;
   background-position: 50% 41.7%;
-  background-size: 28vh;
+  background-size: 95vh;
   background-repeat: no-repeat;
   background-origin: content-box;
   padding-bottom: 200px;
@@ -112,11 +112,11 @@ body {
   z-index: 10;
 }
 
-.scroll-indicator svg {
+/* .scroll-indicator svg {
   color: #ffb0c4;
   width: 100%;
   height: 100%;
-}
+} */
 
 .hero-text {
   color: #ffb0c4;
