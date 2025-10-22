@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhishek</title>
+    <script type="module" crossorigin src="/assets/index-BVVEQ3JG.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-s9osnld3.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="overlay"></div>
+      <div class="hero-1-container">
+        <div class="hero-main-container">
+          <img
+            class="hero-main-logo"
+            draggable="false"
+            src="/gta_logo_cut.webp"
+            alt="gta logo"
+          />
+          <img
+            class="hero-main-image"
+            draggable="false"
+            src="/home.webp"
+            alt="gta logo"
+          />
+        </div>
+        <div class="hero-text-logo-container">
+          <div class="hero-text-logo"></div>
+          <div>
+            <h3 class="hero-text">
+              Upcoming<br />
+              developer<br />
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="hero-2-container">
+        <h3>Hello everyone</h3>
+        <p>
+          I'm Abhishek Shrivastav
+          Bachelor of Engineering in Computer Science & Engineering,
+          at, Srinivas Institute of Technology, Mangalore .Currently pursuing a Bachelor of Engineering in Computer Science & Engineering, 
+          with a strong focus on software development, algorithms, and data structures.
+          Eager to apply engineering principles and technical skills to solve real-world problems
+           and contribute to cutting-edge projects in the tech industry.
+        </p>
+      </div>
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <svg
+          width="34"
+          height="14"
+          viewBox="0 0 34 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          class="_1smfa210"
+          focusable="false"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M33.5609 1.54346C34.0381 2.5875 33.6881 3.87821 32.7791 4.42633L17.0387 13.9181L1.48663 4.42115C0.580153 3.86761 0.235986 2.57483 0.717909 1.53365C1.19983 0.492464 2.32535 0.097152 3.23182 0.650692L17.0497 9.08858L31.051 0.64551C31.96 0.0973872 33.0837 0.499411 33.5609 1.54346Z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Themed site sections revealed on scroll (Education, Projects, Certifications, About) -->
+    <style>
+      /* Dark theme styles for sections — replaces previous .site-section block */
+      :root {
+        --bg-strong: #06070a;
+        --bg-soft: rgba(4,7,12,0.6);
+        --panel: rgba(255,255,255,0.03);
+        --panel-strong: rgba(255,255,255,0.04);
+        --muted: #bfc8d6;
+        --text: #e9eef8;
+        --accent: #8ab4ff;
+      }
+
+      body {
+        background: linear-gradient(180deg, var(--bg-strong) 0%, #030409 100%);
+        color: var(--text);
+      }
+
+      .site-section {
+        padding: 5.5rem 1.25rem;
+        max-width: 1100px;
+        margin: 0 auto;
+        color: var(--text);
+        background: linear-gradient(180deg, rgba(2,6,23,0) 0%, var(--bg-soft) 100%);
+        border-top: 1px solid rgba(255,255,255,0.03);
+      }
+
+      .site-section h2 {
+        font-size: 2rem;
+        margin: 0 0 0.75rem 0;
+        color: #ffffff;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.45);
+      }
+
+      .site-section p { 
+        color: var(--muted); 
+        line-height: 1.6; 
+        margin: 0.25rem 0 0.75rem 0; 
+      }
+
+      .section-intro { 
+        max-width: 70ch; 
+        color: #cfd6e3; 
+        margin-bottom: 1rem; 
+      }
+
+      .cards { 
+        display: grid; 
+        gap: 1rem; 
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+        margin-top: 1rem; 
+      }
+
+      .card { 
+        background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+        border: 1px solid var(--panel-strong);
+        padding: 1rem; 
+        border-radius: 10px; 
+        box-shadow: 0 10px 30px rgba(2,6,23,0.6); 
+        color: var(--muted);
+      }
+
+      .card strong { color: var(--text); }
+
+      /* reveal baseline used by GSAP */
+      .reveal { 
+        opacity: 0; 
+        transform: translateY(40px); 
+        will-change: transform, opacity; 
+      }
+
+      /* Scroll indicator matching dark theme */
+      .scroll-indicator { 
+        color: rgba(255,255,255,0.72); 
+      }
+
+      @media (max-width: 640px) {
+        .site-section { padding: 3.5rem 1rem; }
+      }
+
+      /* Respect user preference (optional) */
+      @media (prefers-color-scheme: light) {
+        /* keep existing colors if user prefers light — no change forced */
+      }
+    </style>
+
+    <section id="education" class="site-section reveal" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <p class="section-intro">
+        Bachelor of Engineering in Computer Science & Engineering — Srinivas Institute of Technology, Mangalore.
+        (Expected / Completed: YYYY)
+      </p>
+      <div class="cards">
+        <div class="card">
+          <strong>Relevant Coursework</strong>
+          <p>Algorithms, Data Structures, Operating Systems, Databases</p>
+        </div>
+        <div class="card">
+          <strong>Achievements</strong>
+          <p>Dean's List, hackathons, and project showcases</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="site-section reveal" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <p class="section-intro">Selected projects highlighting engineering, UI, and systems work. Click links to view repos or demos.</p>
+      <div class="cards">
+        <div class="card">
+          <strong>Project — Example App</strong>
+          <p>Short description, tech: React / Node / PostgreSQL. Link: <em>repo or live</em></p>
+        </div>
+        <div class="card">
+          <strong>Project — Tooling</strong>
+          <p>Short description, tech: Python / Docker. Built to automate CI tasks.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="site-section reveal" aria-labelledby="certifications-title">
+      <h2 id="certifications-title">Certifications</h2>
+      <p class="section-intro">Professional and training certificates relevant to software engineering.</p>
+      <div class="cards">
+        <div class="card">
+          <strong>Certification 1</strong>
+          <p>Issuer — Year — context</p>
+        </div>
+        <div class="card">
+          <strong>Certification 2</strong>
+          <p>Issuer — Year — context</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="site-section reveal" aria-labelledby="about-title">
+      <h2 id="about-title">About Me</h2>
+      <p class="section-intro">
+        I'm Abhishek Shrivastav — a software engineer focused on reliable systems, elegant UI, and learning new technologies.
+        I enjoy open-source, algorithmic challenges, and building products that help people.
+      </p>
+    </section>
+
+    <!-- Scroll reveal logic that uses the same GSAP + ScrollTrigger motions as the hero -->
+    <script>
+      (function waitAndInitReveal() {
+        function init() {
+          if (!(window.gsap && window.ScrollTrigger)) return setTimeout(init, 80);
+          gsap.registerPlugin(ScrollTrigger);
+
+          // Reveal each section with the same motion used for hero elements
+          gsap.utils.toArray('.reveal').forEach((el, i) => {
+            gsap.fromTo(el,
+              { autoAlpha: 0, y: 40, scale: 0.995 },
+              {
+                duration: 0.9,
+                autoAlpha: 1,
+                y: 0,
+                scale: 1,
+                ease: 'power2.out',
+                delay: i * 0.06,
+                scrollTrigger: {
+                  trigger: el,
+                  start: 'top 85%',
+                  toggleActions: 'play none none reverse'
+                }
+              }
+            );
+          });
+
+          // optional subtle stagger for cards inside revealed sections
+          gsap.utils.toArray('.site-section').forEach(section => {
+            const cards = section.querySelectorAll('.card');
+            if (cards.length > 1) {
+              gsap.fromTo(cards,
+                { autoAlpha: 0, y: 16 },
+                {
+                  autoAlpha: 1,
+                  y: 0,
+                  duration: 0.6,
+                  stagger: 0.12,
+                  ease: 'power2.out',
+                  scrollTrigger: {
+                    trigger: section,
+                    start: 'top 80%',
+                    toggleActions: 'play none none reverse'
+                  }
+                }
+              );
+            }
+          });
+        }
+        init();
+      })();
+    </script>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</html>
