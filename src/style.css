@@ -436,3 +436,22 @@ body {
     font-size: 0.9rem;
   }
 }
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: rgba(10,10,10,0.9);
+  color: #d0d0d0;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+footer a {
+  color: #ffb0c4;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
