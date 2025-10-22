@@ -177,3 +177,15 @@ tl.fromTo(
   "<1.2" // starts 1.2 seconds before the previous animation
   // he times from the start of the previous animation and since we're using 1.5s for the prev duration it's like 70% of the previous animation
 );
+
+// Tilted Card functionality for education cards
+document.addEventListener('DOMContentLoaded', () => {
+  const eduCards = document.querySelectorAll('.edu-card');
+
+  eduCards.forEach(card => {
+    new window.TiltedCard(card, {
+      scaleOnHover: 1.1,
+      rotateAmplitude: 14
+    });
+  });
+});

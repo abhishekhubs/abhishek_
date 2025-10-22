@@ -10,6 +10,8 @@ body {
   min-height: 100svh;
   overflow-x: hidden;
   overflow: hidden; /* prevent horizontal scrolling initially */
+  background: #000;
+  color: #000000;
 }
 
 .container {
@@ -43,11 +45,12 @@ body {
   height: 100vh;
   position: relative;
   transform: scale(1.25);
-  background-image: url("/public/logo.png");
+  background-image: url("/logo.png");
   background-size: 1000vh;
   background-position: 50% 41.7%;
   background-repeat: no-repeat;
-  background-origin: content-box;
+  background-origin: content-box
+  ;
   padding-bottom: 200px;
 }
 
@@ -196,5 +199,240 @@ body {
 
   .hero-2-container h3 {
     font-size: 3.5rem;
+  }
+}
+
+/* Education stack styles */
+.education-stack {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: relative;
+  margin: 3rem auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+.edu-item {
+  background: rgba(30, 30, 40, 0.95);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.45);
+  padding: 1.5rem 1rem;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0;
+  color: #000000;
+  text-align: center;
+}
+
+.edu-item.present {
+  border: 2px solid #000000;
+  background: linear-gradient(90deg, #8ab4ff 0%, #ff8a65 100%);
+  color: #222;
+  font-weight: bold;
+}
+
+.edu-content h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+  background: linear-gradient(90deg, #8ab4ff, #c792ea, #ff8a65);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.edu-content p {
+  margin: 0;
+  font-size: 1rem;
+  color: #eaeff6;
+}
+
+.edu-connector {
+  width: 8px;
+  height: 48px;
+  margin: -8px 0;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+/* Simple vertical education stack without gradient color */
+.education-simple-stack {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: relative;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 340px;
+}
+
+.edu-simple-item {
+  background: #23233a;
+  border-radius: 12px;
+  padding: 1rem 0.5rem;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+
+.edu-simple-item.present {
+  border: 2px solid #fff;
+  background: #fff;
+  color: #222;
+  font-weight: bold;
+}
+
+.edu-simple-connector {
+  width: 6px;
+  height: 36px;
+  border-radius: 3px;
+  margin: 0;
+}
+
+/* Remove gradient line from education section */
+.edu-simple-connector,
+.edu-connector {
+  background: none !important;
+}
+
+.edu-simple-item h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.1rem;
+}
+
+.edu-simple-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #eaeff6;
+}
+
+/* Simple black and white theme for present education */
+.edu-simple-item.present {
+  border: 2px solid #222;
+  background: #fff;
+  color: #222;
+  font-weight: bold;
+}
+
+/* Education — simple stacked timeline */
+.edu-stack {
+  width: 100%;
+  max-width: 720px;
+  margin: 2.25rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* align left */
+  gap: 0.2rem;
+  padding: 0 1rem;
+  position: relative;
+  padding: 0 1rem;
+}
+
+/* Remove the vertical line */
+.edu-stack::before {
+  display: none;
+}
+
+/* Card with left-side connector */
+.edu-card {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  background: #121217;
+  color: #eaeff6;
+  border-radius: 10px;
+  padding: 1rem 1.25rem 1rem 2.5rem; /* space for connector */
+  box-shadow: 0 8px 22px rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  z-index: 1;
+  align-items: center;
+  min-height: 120px; /* Ensure all cards are the same size */
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.edu-card:hover {
+  filter: blur(0.5px) contrast(2);
+  transform: scale(1.02);
+}
+
+/* Make education cards bigger */
+.edu-card,
+.edu-simple-item {
+  max-width: 700px;
+  width: 100%;
+  padding: 2rem 2rem;
+  font-size: 1.25rem;
+}
+
+/* current education highlighted in simple black & white */
+.edu-card.edu-current {
+  background: #121217;
+  color: #eaeff6;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.55);
+}
+
+/* Remove all connector lines and circles from education stack */
+.edu-card::before,
+.edu-card::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* content */
+.edu-body h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.edu-body p {
+  margin: 0.35rem 0 0;
+  font-size: 0.95rem;
+  color: inherit;
+  line-height: 1.35;
+}
+
+/* year badge on the right */
+.edu-year {
+  font-size: 0.85rem;
+  color: inherit;
+  opacity: 0.9;
+  white-space: nowrap;
+}
+
+/* responsive tweaks */
+@media (max-width: 640px) {
+  .edu-stack {
+    max-width: 98vw;
+    padding: 0 0.5rem;
+  }
+  .edu-card {
+    padding-left: 2.2rem;
+    font-size: 0.95rem;
+  }
+  .edu-year { display: none; }
+}
+
+@media (max-width: 600px) {
+  .education-stack {
+    max-width: 98vw;
+  }
+  .edu-item {
+    padding: 1rem 0.5rem;
+    font-size: 0.95rem;
+  }
+  .education-simple-stack {
+    max-width: 98vw;
+  }
+  .edu-simple-item {
+    padding: 0.7rem 0.2rem;
+    font-size: 0.9rem;
   }
 }
