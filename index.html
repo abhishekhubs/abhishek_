@@ -305,7 +305,7 @@
     <!-- Footer -->
     <footer class="site-section reveal" aria-labelledby="footer-title">
       <h2 id="footer-title">Footer</h2>
-      <p class="section-intro">© 2023 Abhishek Shrivastav. All rights reserved. | <a href="https://github.com/abhishekhubs" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/abhishekshrivastav" target="_blank">LinkedIn</a></p>
+      <p class="section-intro">© <span id="current-year"></span> Abhishek Shrivastav. All rights reserved. | <a href="https://github.com/abhishekhubs" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/abhishekshrivastav" target="_blank">LinkedIn</a></p>
     </footer>
 
     <!-- Scroll reveal logic that uses the same GSAP + ScrollTrigger motions as the hero -->
@@ -368,4 +368,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script type="module" src="./src/script.js"></script>
   <script type="module" src="./src/TiltedCard.js"></script>
+  <script>
+    // Update the current year in the footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </html>
