@@ -14,8 +14,8 @@
           <img
             class="hero-main-logo"
             draggable="false"
-            src="/gta_logo_cut.webp"
-            alt="home.png"
+            src="/logo1.png"
+            alt=""
           />
           <img
             class="hero-main-image"
@@ -150,6 +150,19 @@
       /* Respect user preference (optional) */
       @media (prefers-color-scheme: light) {
         /* keep existing colors if user prefers light — no change forced */
+      }
+
+      /* Center logo1.png (5x7 cm) in its container */
+      .hero-main-logo {
+        width: 5cm;
+        height: 7cm;
+        object-fit: contain;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        pointer-events: none;
       }
     </style>
 
